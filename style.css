@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    box-shadow: 2px 3px 5px #c8c8c8c8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 0px;
+}
+
+nav img {
+    width: 15%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(28, 148, 255, 0.89);
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgba(28, 148, 255, 0.89);
+    padding-bottom: 1px;
+    /* text-decoration: underline solid rgba(28, 148, 255, 0.89); */
+}
+
+nav button, .bag button, .baseline-1 button {
+    padding: 7px 13px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgba(28, 148, 255, 0.89);
+    border-radius: 10px;
+    color: rgba(28, 148, 255, 0.89);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav button:hover, .bag button:hover, .baseline-1 button:hover {
+    background-color: rgba(28, 148, 255, 0.89);
+    color: white;
+}
+
+.container {
+    display: flex;
+    padding: 100px 50px;
+    gap: 40px;
+}
+
+.content h1 {
+    font-size: 64px;
+    line-height: 72px;
+    margin: 0px 0px 32px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.content img{
+    width: 500px;
+}
+
+
+.boxBag {
+    display: flex;
+    gap: 30px;
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+.bag{
+    background-color: #F5F6F7;
+    padding: 50px 30px;
+    border-radius: 30px;
+}
+.bag img{
+    width: 100%;
+    border-radius: 30px;
+}
+.bag h1 {
+    font-size: 32px;
+    margin: 10px 0px;
+}
+
+.bag p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bag button {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.explore{
+    display: flex;
+    margin: 60px 60px;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.father{
+    
+    background-color:rgb( 245, 246, 247)
+}
+.explore button{
+    padding: 5px 70px;
+    font-size: 16px;
+    margin: 40px 50px;
+}
+.bag img{
+    width: 300px;
+}
+
+
+
+
+.Learn {
+    display: flex;
+    margin: 60px 300px;
+    justify-content: space-between;
+}
+
+.parent {
+    background-color: white
+}
+.boxBag .bag a{
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    font-size: 32px
+}
+.boxBag .bag a:hover, .baseline-2 a:hover, .baseline-3 a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 0px;
+    transition: 1s;
+}
+.news{
+    background-color: rgb(245, 246, 247);
+    display: flex;
+    padding: 30px 50px;
+    gap: 40px
+}
+.item h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 72px;
+    margin: 0px 0px 32px;
+}
+.item p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.baseline{
+    gap: 30px;
+    display: flex;
+    padding: 50px 50px;
+    margin-bottom: 0px;
+}
+.baseline-1 p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.baseline-2 a{
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    font-size: 20px
+}
+.baseline-3 a{
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    font-size: 20px
+}
+.newsletter{
+    background-color: rgb(245, 246, 247);
+    padding: 50px 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.newsletter h2{
+    font-weight: 700;
+    font-size: 34px;
+}
+.newsletter p{
+    font-size: 20px;
+}
+.terms{
+    padding-left: 330px;
+    text-align: left;
+    
+}
+.newsletter button{
+    color: rgb(52, 131, 235);
+    font-size: 16px;
+    margin: 40px 50px;
+    padding: 8px;
+}
+.foot{
+    gap: 30px;
+    display: flex;
+    padding: 50px 50px;
+    margin-bottom: 0px;
+}
+.dev p{
+    font-size: 14px;
+}
+.list-t{
+    padding-left: 50px;
+}
+.list-t ul{
+    list-style: none;
+    
+}
+@media (min-width:0px) and ( max-width:768px){
+    nav{
+        flex-direction: column;
+        padding: 15px;
+        gap: 30px;
+        position: relative;
+    }
+    nav img{
+        width: 170px;
+        margin-left: 0px;
+    }
+    nav ul{
+        display: none;
+        
+    }
+    nav button{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px ;
+    }
+    .content h1{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .content p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content img{
+        width: 100%;
+        max-width: 400px;
+    }
+    .boxBag{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .bag, .news{
+        width: 100%;
+        max-width: 450px;
+    }
+    .bag img{
+        width: 100%;
+        height: auto;
+    }
+.explore{
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 20px;
+    gap: 20px;
+}
+    .bag button{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+    .text{
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .item img{
+        justify-content: center;
+        margin-top: 20px;
+        display: none;
+    }
+    .baseline{
+        flex-direction: column;
+    }
+
+}
